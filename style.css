@@ -1,0 +1,239 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  /* line-height: 1.5; */
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* MY CSS */
+
+:root {
+  --primary: hsl(25, 97%, 53%);
+  --neutral-100: hsl(0, 0%, 100%);
+  --neutral-300: hsl(217, 12%, 63%);
+  --neutral-400: hsl(216, 12%, 54%);
+  --neutral-600: hsl(213, 19%, 18%);
+  --neutral-800: hsl(216, 12%, 8%);
+  --fw-reg: 400;
+  --fw-bold: 700;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+main {
+  background-color: var(--neutral-800);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b-form,
+.b-card {
+  background: radial-gradient(
+    circle,
+    rgba(35, 42, 52, 1) 0%,
+    rgba(24, 30, 39, 1) 100%
+  );
+  max-width: clamp(20.438rem, 7.981vw + 18.567rem, 25.75rem);
+  border-radius: 0.9375rem;
+}
+
+.b-form {
+  padding: 1.5rem 2rem 1.375rem 1.5rem;
+}
+
+.e-form__icon-container {
+  border-radius: 50%;
+  background-color: var(--neutral-600);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: clamp(1rem, 1.315vw + 0.692rem, 1.875rem);
+}
+
+.e-form__header {
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.e-header__body {
+  margin-bottom: 1.5rem;
+}
+
+.e-form__title,
+.e-card__title {
+  margin-bottom: 0.625rem;
+  font-size: clamp(1.5rem, 1.412rem + 0.3756vw, 1.75rem);
+  font-weight: var(--fw-bold);
+  color: var(--neutral-100);
+}
+
+.e-form__text,
+.e-card__text {
+  font-size: clamp(0.875rem, 0.094vw + 0.853rem, 0.938rem);
+  font-weight: var(--fw-reg);
+  color: var(--neutral-300);
+  line-height: clamp(1.375rem, 1.331rem + 0.1878vw, 1.5rem);
+}
+
+.e-form__main {
+  margin-bottom: clamp(1.5rem, 0.751vw + 1.324rem, 2rem);
+  padding: 0;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.e-form__rating {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.e-form__rating-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: var(--neutral-400);
+  background-color: var(--neutral-600);
+  cursor: pointer;
+  font-size: clamp(0.875rem, 0.831rem + 0.1878vw, 1rem);
+  font-weight: var(--fw-bold);
+  line-height: 1.5rem;
+}
+
+.e-form__rating-number:hover {
+  background-color: var(--primary);
+  color: var(--neutral-100);
+  transition: ease-in-out;
+}
+
+.e-form__rating:checked + .e-form__rating-number {
+  background-color: var(--neutral-400);
+  color: var(--neutral-100);
+}
+
+.e-form__button {
+  all: unset;
+  background-color: var(--primary);
+  min-width: 100%;
+  font-size: clamp(0.875rem, 0.853rem + 0.0939vw, 0.9375rem);
+  color: var(--neutral-100);
+  font-weight: var(--fw-bold);
+  letter-spacing: 1.87px;
+  text-transform: uppercase;
+  padding: 0.75rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22.5px;
+  cursor: pointer;
+}
+
+.e-form__button:hover {
+  background-color: var(--neutral-100);
+  color: var(--primary);
+}
+
+.b-card {
+  display: grid;
+  justify-items: center;
+  row-gap: 1.5rem;
+  padding: 2.125rem 1.5rem 2.3125rem 1.5rem;
+  text-align: center;
+}
+
+.e-card__rating {
+  color: var(--primary);
+  background-color: var(--neutral-600);
+  max-width: fit-content;
+  padding: 0.3125rem 0.75rem;
+  border-radius: 22.5px;
+  font-weight: var(--fw-reg);
+  font-size: clamp(0.875rem, 0.853rem + 0.0939vw, 0.9375rem);
+}
+
+.e-card__illustration {
+  max-width: clamp(9rem, 1.69vw + 8.604rem, 10.125rem);
+}
+
+/* .e-card__title {
+  margin-bottom: 0.625rem;
+} */
+
+@media (min-width: 37.5rem) {
+  .b-form {
+    border-radius: 1.875rem;
+    padding: 2rem 2.4375rem 2rem 2rem;
+  }
+
+  .e-form__icon-container {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .e-form__rating-number {
+    width: 51px;
+    height: 51px;
+  }
+
+  .b-card {
+    border-radius: 1.875rem;
+    padding: 2.8125rem 2.25rem;
+    row-gap: 2rem;
+  }
+
+  .e-card__rating {
+    padding-inline: 1.25rem;
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <!-- Rating state starts -->
+    <main>
+      <form action="submit" class="b-form" id="form">
+        <legend class="e-form__header">
+          <div class="e-form__icon-container">
+            <img
+              src="./images/icon-star.svg"
+              alt="a star"
+              class="e-form__icon"
+            />
+          </div>
+          <div class="e-header__body">
+            <h2 class="e-form__title">How did we do?</h2>
+            <p class="e-form__text">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+        </legend>
+        <fieldset class="e-form__main">
+          <input
+            type="radio"
+            name="rating"
+            id="rating-1"
+            value="1"
+            class="e-form__rating"
+          />
+          <label for="rating-1" class="e-form__rating-number">1</label>
+          <input
+            type="radio"
+            name="rating"
+            id="rating-2"
+            value="2"
+            class="e-form__rating"
+          />
+          <label for="rating-2" class="e-form__rating-number">2</label>
+          <input
+            type="radio"
+            name="rating"
+            id="rating-3"
+            value="3"
+            class="e-form__rating"
+          />
+          <label for="rating-3" class="e-form__rating-number">3</label>
+          <input
+            type="radio"
+            name="rating"
+            id="rating-4"
+            value="4"
+            class="e-form__rating"
+          />
+          <label for="rating-4" class="e-form__rating-number">4</label>
+          <input
+            type="radio"
+            name="rating"
+            id="rating-5"
+            value="5"
+            class="e-form__rating"
+          />
+          <label for="rating-5" class="e-form__rating-number">5</label>
+        </fieldset>
+        <input
+          type="submit"
+          value="Submit"
+          class="e-form__button"
+          id="submitBtn"
+        />
+      </form>
+    </main>
+    <!-- Rating state ends -->
+    <script src="./page-01.js"></script>
+  </body>
+</html>

@@ -1,21 +1,29 @@
 # Interactive Rating Component
 
-This is a Frontend Mentor challenge completed using HTML, CSS, and JavaScript. The project implements an interactive rating component where ratings information is fetched using parameters.
+![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
 
-You can view the project [here](https://matbac85.github.io/interactive-rating-component/).
+## Overview
 
-## Introduction
-
-The challenge aimed to create an interactive rating component utilizing JavaScript to fetch ratings information based on parameters provided.
+This interactive rating component was developed as a solution to the Frontend Mentor challenge. The challenge was to build out a rating component that closely matches the provided design.
 
 ## Features
 
-- Interactive and dynamic rating component.
-- Utilizes JavaScript to fetch ratings information.
-- HTML and CSS for structure and styling.
+- Responsive layout for different screen sizes
+- Mimics the design provided
 
-### Viewing the Project
+## Expected Behavior
 
-1. Visit the [Interactive Rating Component](https://matbac85.github.io/interactive-rating-component/) on your web browser.
-2. Interact with the rating component to see it in action.
-3. Explore different parameters to fetch ratings information.
+- Users should be able to view the optimal layout for the app depending on their device's screen size.
+- Hover states should be implemented for all interactive elements on the page.
+- Users should be able to select and submit a number rating.
+- Users should see the "Thank you" card state after submitting a rating.
+
+## Technologies Used
+
+- HTML
+- CSS
+
+## Links
+
+- Solution URL: [Interactive Rating Component Solution](https://matbac85.github.io/interactive-rating-component/)
+- Frontend Mentor Profile: [My Frontend Mentor Profile](https://www.frontendmentor.io/profile/matbac85)
